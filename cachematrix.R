@@ -48,8 +48,8 @@ cacheSolve <- function(x, ...) {
 			#if inverse has not yet been computed, solve it, cache it then return it
 			matrix <-x$getMatrix()
 			inverse <- solve(matrix)
-			x$setInverse(inverse)
-			return inverse()	
+			x$setMatrixInverse(inverse)
+			return inverse	
 		}
 
 }
